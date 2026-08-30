@@ -1,0 +1,33 @@
+
+(function () {
+  const d = window.SITE_DATA;
+  if (!d) return;
+
+  function text(id, value) {
+    const el = document.getElementById(id);
+    if (el && value) el.textContent = value;
+  }
+
+  text("profile-name", d.profile.name);
+  text("profile-title", d.profile.title);
+  text("profile-affiliation", d.profile.affiliation);
+  text("profile-award", d.profile.award);
+  text("profile-hero", d.profile.hero);
+
+  document.querySelectorAll("[data-rice-link]").forEach(a => a.href = d.profile.links.riceBusiness);
+  document.querySelectorAll("[data-linkedin-link]").forEach(a => a.href = d.profile.links.linkedin);
+  document.querySelectorAll("[data-email-link]").forEach(a => a.href = "mailto:" + d.profile.email);
+
+  const footer = document.querySelector(".footer-inner");
+  if (footer && !footer.querySelector(".professional-links")) {
+    const links = document.createElement("span");
+    links.className = "professional-links";
+    links.innerHTML =
+      '<a data-rice-link target="_blank" rel="noopener">Rice Business</a>' +
+      '<span> · </span>' +
+      '<a data-linkedin-link target="_blank" rel="noopener">LinkedIn</a>';
+    footer.appendChild(links);
+    links.querySelector("[data-rice-link]").href = d.profile.links.riceBusiness;
+    links.querySelector("[data-linkedin-link]").href = d.profile.links.linkedin;
+  }
+})();
