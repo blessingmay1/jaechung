@@ -16,6 +16,7 @@
 
   document.querySelectorAll("[data-rice-link]").forEach(a => a.href = d.profile.links.riceBusiness);
   document.querySelectorAll("[data-linkedin-link]").forEach(a => a.href = d.profile.links.linkedin);
+  document.querySelectorAll("[data-researchgate-link]").forEach(a => a.href = d.profile.links.researchGate);
   document.querySelectorAll("[data-email-display]").forEach(el => el.textContent = d.profile.emailDisplay);
 
   const footer = document.querySelector(".footer-inner");
@@ -25,9 +26,12 @@
     links.innerHTML =
       '<a data-rice-link target="_blank" rel="noopener">Rice Business</a>' +
       '<span> · </span>' +
-      '<a data-linkedin-link target="_blank" rel="noopener">LinkedIn</a>';
+      '<a data-linkedin-link target="_blank" rel="noopener">LinkedIn</a>' +
+      '<span> · </span>' +
+      '<a data-researchgate-link target="_blank" rel="noopener">ResearchGate</a>';
     footer.appendChild(links);
     links.querySelector("[data-rice-link]").href = d.profile.links.riceBusiness;
     links.querySelector("[data-linkedin-link]").href = d.profile.links.linkedin;
+    links.querySelector("[data-researchgate-link]").href = d.profile.links.researchGate;
   }
 })();

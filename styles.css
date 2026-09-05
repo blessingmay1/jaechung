@@ -167,6 +167,7 @@ h1,h2,h3{letter-spacing:-.03em}
 .teaching-photo figcaption{padding:18px 20px;display:flex;flex-direction:column;gap:2px}
 .teaching-photo figcaption strong{font-size:16px;color:var(--navy)}
 .teaching-photo figcaption span{font-size:14px;color:var(--muted)}
+.teaching-photo-note{margin:10px 0 0;text-align:center;font-size:13px;color:var(--muted);font-style:italic}
 .course-heading{margin-top:72px;margin-bottom:28px}
 .featured-highlight{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);border:1px solid var(--line);border-radius:28px;overflow:hidden;background:var(--navy);color:#fff;box-shadow:var(--shadow)}
 .featured-highlight>img{width:100%;height:100%;min-height:430px;object-fit:cover}
