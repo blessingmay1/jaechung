@@ -1,65 +1,23 @@
 (function () {
   const studies = {
-    nft: {
-      eyebrow: "DIGITAL MARKETS · JOURNAL OF MARKETING",
-      title: "Early attention becomes a lasting marketplace advantage.",
-      argument: "Visible social attention can turn small early differences into durable popularity advantages in NFT markets.",
-      image: "assets/research-nft-figure.png",
-      alt: "Graphs showing how visible attention and view-count rank predict the accumulation of favorites for NFT artworks",
-      caption: "Adapted from Figure 2. Higher-ranked NFTs accumulated favorites more rapidly, and popularity accelerated as visible attention increased.",
-      method: "The research combines 9,957 Bored Ape NFTs tracked over 150 days with a longitudinal study and six controlled experiments.",
-      doi: "https://doi.org/10.1177/00222429261460019"
-    },
-    seesaw: {
-      eyebrow: "OWNERSHIP & IDENTITY · JOURNAL OF MARKETING RESEARCH",
-      title: "Possessions can activate one identity—and suppress another.",
-      argument: "Making ownership salient activates identities tied to the owned object while suppressing competing identities, improving performance only when the task matches the activated self.",
-      image: "assets/research-seesaw-figure.png",
-      alt: "Experimental results comparing quiz performance after calculator and art-piece ownership",
-      caption: "Adapted from Figure 4. Performance improved when the task matched the identity activated by the owned object—and declined when it did not.",
-      method: "Five randomized experiments varied ownership and task framing while holding the performance task constant.",
-      doi: "https://doi.org/10.1177/0022243718793885"
-    },
-    "found-time": {
-      eyebrow: "TIME ALLOCATION · JOURNAL OF CONSUMER RESEARCH",
-      title: "Unexpected free time changes how consumers spend it.",
-      argument: "Unexpected free time feels more expendable than planned time, leading consumers to spend it on pleasure rather than utility.",
-      image: "assets/research-found-time-chart.png",
-      alt: "Bar chart showing greater allocation to hedonic activities when free time is unexpected",
-      caption: "Visualization based on reported results from Study 4. The preference for hedonic consumption weakens when consumers feel especially busy.",
-      method: "Five laboratory and field studies tested how unexpectedness, perceived busyness, and duration shape time allocation.",
-      doi: "https://doi.org/10.1093/jcr/ucac032"
-    },
-    instagram: {
-      eyebrow: "SOCIAL MEDIA · JOURNAL OF CONSUMER RESEARCH",
-      title: "Influencers gain engagement by showing close relationships—not simply larger crowds.",
-      argument: "Influencers generate more engagement when they reveal close relationships, especially small-group ties, rather than presenting themselves alone or in larger crowds.",
-      image: "assets/research-instagram-chart.png",
-      alt: "Charts showing higher Instagram engagement for close-tie references and photographs with one or two other people",
-      caption: "Visualization based on Table 1. Close-tie references increased engagement, while photographs with one or two other people outperformed solo and larger-group images.",
-      method: "The analysis combines 55,631 Instagram posts with text and image analysis, human validation, and three controlled experiments.",
-      doi: "https://doi.org/10.1093/jcr/ucad019",
-      relatedTitle: "Research: For Influencers, Showing Your Inner Circle Can Boost Engagement",
-      relatedUrl: "https://hbr.org/2024/09/research-for-influencers-showing-your-inner-circle-can-boost-engagement"
-    },
-    ai: {
-      eyebrow: "GENERATIVE AI · NATURE HUMAN BEHAVIOUR",
-      title: "ChatGPT can improve creative output by making ideas more coherent.",
-      argument: "ChatGPT raises judged creativity primarily by helping people develop more coherent and articulate ideas, rather than by increasing novelty alone.",
-      image: "assets/research-ai-chart.png",
-      alt: "Bar chart comparing creativity ratings for ChatGPT-assisted ideas and ideas created using web search or no technological assistance",
-      caption: "Visualization based on reported experimental means. The effect generalized across creative tasks and independent evaluator samples.",
-      method: "Five randomized experiments used multiple creative tasks, independent evaluators, expert judges, and mediation analysis.",
-      doi: "https://doi.org/10.1038/s41562-024-01953-1"
-    }
+    nft: { eyebrow:"DIGITAL MARKETS · JOURNAL OF MARKETING", title:"Early attention becomes a lasting marketplace advantage.", argument:"Visible social attention can turn small early differences into durable popularity advantages in NFT markets.", images:[{src:"assets/research-nft-figure.png",alt:"Graphs showing how visible attention predicts accumulating favorites for NFT artworks",caption:"Adapted from Figure 2. Higher-ranked NFTs accumulated favorites more rapidly, and popularity accelerated as visible attention increased."}], method:"The research combines 9,957 Bored Ape NFTs tracked over 150 days with a longitudinal study and six controlled experiments.", doi:"https://doi.org/10.1177/00222429261460019" },
+    instagram: { eyebrow:"SOCIAL MEDIA · JOURNAL OF CONSUMER RESEARCH", title:"Influencers gain engagement by showing close relationships—not simply larger crowds.", argument:"Influencers generate more engagement when they reveal close relationships, especially small-group ties, rather than presenting themselves alone or in larger crowds.", images:[{src:"assets/research-instagram-chart.png",alt:"Charts showing higher Instagram engagement for close-tie references and small groups",caption:"Visualization based on Table 1. Close-tie references increased engagement, while photographs with one or two other people outperformed solo and larger-group images."}], method:"The analysis combines 55,631 Instagram posts with text and image analysis, human validation, and three controlled experiments.", doi:"https://doi.org/10.1093/jcr/ucad019", relatedTitle:"Research: For Influencers, Showing Your Inner Circle Can Boost Engagement", relatedUrl:"https://hbr.org/2024/09/research-for-influencers-showing-your-inner-circle-can-boost-engagement" },
+    ai: { eyebrow:"GENERATIVE AI · NATURE HUMAN BEHAVIOUR", title:"ChatGPT can improve creative output by making ideas more coherent.", argument:"ChatGPT raises judged creativity primarily by helping people develop more coherent and articulate ideas, rather than by increasing novelty alone.", images:[{src:"assets/research-ai-chart.png",alt:"Creativity ratings for ChatGPT-assisted and comparison conditions",caption:"Visualization based on reported experimental means. The effect generalized across creative tasks and independent evaluator samples."}], method:"Five randomized experiments used multiple creative tasks, independent evaluators, expert judges, and mediation analysis.", doi:"https://doi.org/10.1038/s41562-024-01953-1" },
+    seesaw: { eyebrow:"OWNERSHIP & IDENTITY · JOURNAL OF MARKETING RESEARCH", title:"Possessions can activate one identity—and suppress another.", argument:"Making ownership salient activates identities tied to the owned object while suppressing competing identities, improving performance only when the task matches the activated self.", images:[{src:"assets/research-seesaw-figure.png",alt:"Experimental results comparing quiz performance after calculator and art-piece ownership",caption:"Adapted from Figure 4. Performance improved when the task matched the identity activated by the owned object—and declined when it did not."}], method:"Five randomized experiments varied ownership and task framing while holding the performance task constant.", doi:"https://doi.org/10.1177/0022243718793885" },
+    "found-time": { eyebrow:"TIME ALLOCATION · JOURNAL OF CONSUMER RESEARCH", title:"What do people do with time they never expected to have?", argument:"During Ontario’s 2017 college faculty strike and a one-day Columbia University snow closure in New York City, students spent a greater share of unexpectedly gained free time on enjoyable rather than practical activities.", images:[{src:"assets/research-found-time-field-settings.png",alt:"Ontario college strike and Columbia University snow closure field-study settings",caption:"Unexpected disruptions created naturally occurring periods of ‘found time.’ Images are credited within the visual."}], method:"Dr. Chung is also an expert in field research, capturing how people use unexpected time when it becomes available without advance planning.", doi:"https://doi.org/10.1093/jcr/ucac032" },
+    airbnb: { eyebrow:"SHARING ECONOMY · JOURNAL OF CONSUMER RESEARCH", title:"What hosts say about their motivation predicts long-term platform value.", argument:"Text-mined motivations reveal meaningful differences in how Airbnb hosts present listings, satisfy guests, remain active, set prices, and create lifetime value.", images:[{src:"assets/research-airbnb-table.png",alt:"Published table connecting Airbnb host motivation with expected activity, pricing, and lifetime value",caption:"Table 9 links inferred host motivations to expected activity, pricing, and customer lifetime value; values are scaled to protect confidential business data."}], method:"The research combines open-ended responses from 22,842 hosts with transaction-level Airbnb data, machine-learning text analysis, and two controlled experiments.", doi:"https://doi.org/10.1093/jcr/ucab034" },
+    youtube: { eyebrow:"YOUTUBE · PERSONALIZED RECOMMENDATIONS", title:"When good recommendations make other content seem more credible.", argument:"YouTube serves as both an entertainment destination and an important source of user-generated information, making trust in its recommendations consequential for what consumers believe.", images:[{src:"assets/research-youtube-platforms.png",alt:"Comparison of major platforms by information and entertainment use",caption:"YouTube occupies an unusual position at the intersection of entertainment and user-generated information."},{src:"assets/research-youtube-reliance.png",alt:"Diagram showing how recommendation experiences build platform trust and content belief",caption:"Recommendation reliance develops through repeated exposure to satisfying recommendations, building trust that can spill over to later videos."}], panelTitle:"What the research shows", method:"Across six studies, heightened recommendation reliance builds trust in YouTube as a platform. That trust spills over to increase belief in individual videos, whether their claims are true, unverified, or misleading.", status:"DOI pending" },
+    polymarket: { eyebrow:"PREDICTION MARKETS · WORKING PAPER", title:"Why traders follow rising probabilities more readily than equivalent declines.", argument:"The research examines whether consumers respond differently to upward and downward price movements—and whether the magnitude of the market signal changes that response.", images:[{src:"assets/research-polymarket-screen.png",alt:"Actual Polymarket contract screen",caption:"An actual Polymarket contract displays changing probabilities alongside YES and NO trading options."},{src:"assets/research-polymarket-figure3.png",alt:"Figure 3 showing upward and downward price movements of weak and strong magnitude",caption:"Figure 3 varies both the direction and strength of price movements across twelve contracts."}], panelTitle:"What the research shows", method:"Traders follow upward price movements more readily than equally informative downward movements. Upward signals make an event easier to imagine; the asymmetry fades when downward signals become strong enough to make the event’s nonoccurrence vivid.", status:"Working paper · DOI pending" },
+    vr: { eyebrow:"VIRTUAL REALITY · CONDITIONALLY ACCEPTED", title:"A virtual experience can satisfy a real need—and reshape later consumption.", argument:"Immersive VR can fulfill consumers’ needs strongly enough to reduce immediate demand for related real-world experiences, especially when the experience feels complete.", images:[{src:"assets/research-vr-participants.png",alt:"Participants using laptops, smartphones, and virtual-reality headsets",caption:"Participants experienced content through laptops, smartphones, and immersive headsets in field and laboratory settings."}], method:"The research combines two field studies with four laboratory experiments using actual choices, follow-up surveys, and physiological measurement.", status:"Conditionally accepted · DOI pending" }
   };
-  const key = new URLSearchParams(window.location.search).get("paper") || "instagram";
+  const key = new URLSearchParams(location.search).get("paper") || "instagram";
   const study = studies[key] || studies.instagram;
-  const setText = (id, value) => { const el = document.getElementById(id); if (el) el.textContent = value; };
-  setText("study-eyebrow", study.eyebrow); setText("study-title", study.title); setText("study-argument", study.argument);
-  setText("study-caption", study.caption); setText("study-method", study.method);
-  const image = document.getElementById("study-image"); image.src = study.image; image.alt = study.alt;
-  const doi = document.getElementById("study-doi"); doi.href = study.doi;
-  if (study.relatedUrl) { const box = document.getElementById("related-article"); const link = document.getElementById("related-link"); box.hidden = false; link.href = study.relatedUrl; link.textContent = study.relatedTitle + " ↗"; }
-  document.title = study.title + " | Jaeyeon Chung";
+  const setText = (id,value) => { const el=document.getElementById(id); if(el) el.textContent=value; };
+  setText("study-eyebrow",study.eyebrow); setText("study-title",study.title); setText("study-argument",study.argument); setText("study-method",study.method); setText("study-panel-title",study.panelTitle || "How it was tested");
+  const visuals=document.getElementById("study-visuals");
+  study.images.forEach(item => { const figure=document.createElement("figure"); figure.className="study-figure"; const img=document.createElement("img"); img.src=item.src; img.alt=item.alt; const cap=document.createElement("figcaption"); cap.textContent=item.caption; figure.append(img,cap); visuals.appendChild(figure); });
+  const doi=document.getElementById("study-doi"), status=document.getElementById("study-status");
+  if(study.doi){ doi.href=study.doi; } else { doi.hidden=true; status.hidden=false; status.textContent=study.status; }
+  if(study.relatedUrl){ const box=document.getElementById("related-article"),link=document.getElementById("related-link"); box.hidden=false; link.href=study.relatedUrl; link.textContent=study.relatedTitle+" ↗"; }
+  document.title=study.title+" | Jaeyeon Chung";
 })();
