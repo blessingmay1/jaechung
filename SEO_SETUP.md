@@ -27,7 +27,7 @@ Good formats:
 - jaeyeonchung.org
 
 Once you choose the domain, globally replace:
-https://jaechung.com
+https://jaechung.org
 and
 jaechung.com
 

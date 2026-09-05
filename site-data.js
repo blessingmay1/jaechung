@@ -25,7 +25,7 @@ window.SITE_DATA = {
     location: "Houston, Texas",
     award: "MSI Young Scholar · 2025",
     hero:
-      "Dr. Jae Chung is an expert in consumer behavior, digital marketing, and technology-driven markets. Her research has appeared in the Journal of Consumer Research, Journal of Marketing Research, Journal of Marketing, Nature Human Behaviour, and Harvard Business Review.",
+      "I study how technology-mediated environments shape consumer identity, value, and choice. My research combines experiments with natural shocks, marketplace data, and large-scale digital traces.",
     shortBio:
       "I am the William S. Mackey Jr. Distinguished Assistant Professor of Marketing at Rice University. My research examines how consumers behave in digital and emerging markets, especially when technology changes the signals people use to judge quality, credibility, value, and social influence.",
     links: {
