@@ -16,7 +16,7 @@
 
   document.querySelectorAll("[data-rice-link]").forEach(a => a.href = d.profile.links.riceBusiness);
   document.querySelectorAll("[data-linkedin-link]").forEach(a => a.href = d.profile.links.linkedin);
-  document.querySelectorAll("[data-email-link]").forEach(a => a.href = "mailto:" + d.profile.email);
+  document.querySelectorAll("[data-email-display]").forEach(el => el.textContent = d.profile.emailDisplay);
 
   const footer = document.querySelector(".footer-inner");
   if (footer && !footer.querySelector(".professional-links")) {

@@ -21,11 +21,11 @@ window.SITE_DATA = {
     name: "Jaeyeon (Jae) Chung",
     title: "William S. Mackey Jr. Distinguished Assistant Professor",
     affiliation: "Marketing · Rice University",
-    email: "jc134@rice.edu",
+    emailDisplay: "jc134 [at] rice.edu",
     location: "Houston, Texas",
     award: "MSI Young Scholar · 2025",
     hero:
-      "I study how technology changes what consumers trust, value, choose, and share—from recommendation algorithms and prediction markets to virtual reality, digital ownership, platforms, creators, and AI.",
+      "Dr. Jae Chung is an expert in consumer behavior, digital marketing, and technology-driven markets. Her research combines randomized controlled experiments, large-scale marketplace data, surveys, field studies, and text analysis.",
     shortBio:
       "I am the William S. Mackey Jr. Distinguished Assistant Professor of Marketing at Rice University. My research examines how consumers behave in digital and emerging markets, especially when technology changes the signals people use to judge quality, credibility, value, and social influence.",
     links: {
@@ -155,26 +155,26 @@ window.SITE_DATA = {
     {
       category: "Recognition",
       title: "MSI Young Scholar 2025",
-      caption: "Add a photo from the award, meeting, or related event.",
-      image: ""
+      caption: "Recognized as part of the Marketing Science Institute's 2025 cohort of emerging marketing scholars.",
+      image: "assets/msi-young-scholar-2025.webp"
     },
     {
       category: "Speaking",
-      title: "Invited Talk or Conference Presentation",
-      caption: "Add the venue, audience, talk title, or research topic.",
-      image: ""
+      title: "TEDxRiceU Speaker",
+      caption: "Speaking at the 2022 TEDxRiceU Spring Conference.",
+      image: "assets/tedx-riceu.webp"
     },
     {
       category: "Conference",
-      title: "Academic Conference",
-      caption: "Use this for conference talks, panels, workshops, or professional gatherings.",
-      image: ""
+      title: "Research Presentations",
+      caption: "Presenting research on social-media influencers and consumer engagement.",
+      image: "assets/conference-presentation.webp"
     },
     {
-      category: "Media / Public Engagement",
-      title: "Public-Facing Research",
-      caption: "Use this for interviews, panels, podcasts, or public events.",
-      image: ""
+      category: "Media",
+      title: "Fox 26 News",
+      caption: "Featured as a behavioral-science and consumer-behavior expert.",
+      image: "assets/fox26-interview.webp"
     }
   ]
 };

@@ -27,9 +27,9 @@ Good formats:
 - jaeyeonchung.org
 
 Once you choose the domain, globally replace:
-SITE_DOMAIN_TO_REPLACE
+https://jaechung.com
 and
-YOUR-DOMAIN.com
+jaechung.com
 
 with your real domain.
 
