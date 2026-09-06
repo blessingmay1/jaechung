@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace with your final domain after deployment
-Sitemap: https://jaechung.com/sitemap.xml
+Sitemap: https://jaechung.org/sitemap.xml

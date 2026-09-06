@@ -1,6 +1,12 @@
 [build]
 publish = "."
 
+[[redirects]]
+from = "https://www.jaechung.org/*"
+to = "https://jaechung.org/:splat"
+status = 301
+force = true
+
 [[headers]]
 for = "/*"
   [headers.values]

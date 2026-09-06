@@ -31,6 +31,7 @@ window.SITE_DATA = {
     links: {
       riceBusiness: "https://business.rice.edu/person/jaeyeon-jae-chung",
       riceFaculty: "https://profiles.rice.edu/faculty/jaeyeon-jae-chung",
+      googleScholar: "https://scholar.google.com/citations?hl=en&user=r5wBbHMAAAAJ",
       linkedin: "https://www.linkedin.com/in/jaeyeon-jae-chung-0b37a83a",
       researchGate: "https://www.researchgate.net/profile/Jaeyeon-Chung-3"
     }

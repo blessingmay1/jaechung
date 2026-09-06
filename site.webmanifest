@@ -1,0 +1,16 @@
+{
+  "name": "Jaeyeon (Jae) Chung",
+  "short_name": "Jae Chung",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#12345a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

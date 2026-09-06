@@ -7,42 +7,32 @@ Your site now includes:
 - Schema.org Person structured data
 - your Rice Business profile
 - your Rice faculty profile
+- your Google Scholar profile
 - your LinkedIn profile
-- a sitemap template
+- a production sitemap for jaechung.org
 - robots.txt
 - your professional headshot as the social preview image
 
 Official profiles currently connected:
 - Rice Business: https://business.rice.edu/person/jaeyeon-jae-chung
 - Rice faculty profile: https://profiles.rice.edu/faculty/jaeyeon-jae-chung
+- Google Scholar: https://scholar.google.com/citations?hl=en&user=r5wBbHMAAAAJ
 - LinkedIn: https://www.linkedin.com/in/jaeyeon-jae-chung-0b37a83a
 
-## BEFORE GOING LIVE: CHOOSE YOUR DOMAIN
+## OFFICIAL DOMAIN
 
-A custom domain is strongly recommended for long-term Google visibility.
-
-Good formats:
-- jaeyeonchung.com
-- jaeyeonjaechung.com
-- jaeyeonchung.org
-
-Once you choose the domain, globally replace:
-https://jaechung.org
-and
-jaechung.com
-
-with your real domain.
+The canonical public domain is https://jaechung.org.
 
 ## AFTER NETLIFY DEPLOYMENT
 
-1. Connect your custom domain in Netlify.
-2. Update the two Rice profile pages so their Website link points to your new personal site.
-3. Add your personal website to your LinkedIn Contact Info.
+1. Confirm that jaechung.org is the primary domain in Netlify and that www.jaechung.org redirects to it.
+2. Update the two Rice profile pages so their Website link points to https://jaechung.org.
+3. Add https://jaechung.org to Google Scholar, LinkedIn Contact Info, and ResearchGate.
 4. Make sure the same full name is used consistently:
    Jaeyeon (Jae) Chung
 5. Create a Google Search Console property for the final domain.
 6. Submit sitemap.xml in Search Console.
-7. Request indexing for the homepage, Research, Publications, and About pages.
+7. Request indexing for the homepage, Research, Publications, About, Contact, and Expertise pages.
 8. Link to the personal site from other authoritative academic pages when appropriate.
 
 ## IMPORTANT SEO PRINCIPLE
@@ -58,16 +48,8 @@ For a person-name search, the strongest signals usually come from:
 
 ## INDUSTRY DISCOVERABILITY
 
-Right now the site is intentionally academic-first.
-
-When you are ready to publicly offer industry or legal work, add a visible page such as:
-- Industry Expertise
-- Advisory & Expert Work
-- Research & Industry Engagement
-
-That page can truthfully describe areas such as:
-digital marketing, consumer behavior, online platforms, social media, recommendation systems,
-AI, digital products, marketplace behavior, and consumer decision making.
+The site remains academic-first. A discreet Expertise page, reached through Contact, describes
+selected consulting, litigation-support, and expert-witness matters using research-grounded language.
 
 Do not hide phrases like “expert witness” only in metadata. Search engines generally reward
 visible, relevant content and external authority more than hidden keyword repetition.
