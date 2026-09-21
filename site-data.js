@@ -155,6 +155,13 @@ window.SITE_DATA = {
 
   highlights: [
     {
+      category: "Media",
+      title: "Rice Business Wisdom: The AI Issue",
+      caption: "A four-page feature on my research with Byung Cheol Lee about ChatGPT and creative problem-solving.",
+      image: "assets/rice-business-wisdom-ai-feature.webp",
+      url: "https://business.rice.edu/sites/default/files/2026-09/RBW_-_AI_Issue.pdf#page=28"
+    },
+    {
       category: "Recognition",
       title: "MSI Young Scholar 2025",
       caption: "Recognized as part of the Marketing Science Institute's 2025 cohort of emerging marketing scholars.",

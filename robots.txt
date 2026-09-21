@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# Search and answer-engine crawlers are welcome to index this public academic site.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://jaechung.org/sitemap.xml

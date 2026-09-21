@@ -25,6 +25,8 @@
     const links = document.createElement("span");
     links.className = "professional-links";
     links.innerHTML =
+      '<a href="expertise.html">Expertise</a>' +
+      '<span> · </span>' +
       '<a data-rice-link target="_blank" rel="noopener">Rice Business</a>' +
       '<span> · </span>' +
       '<a data-scholar-link target="_blank" rel="noopener">Google Scholar</a>' +
