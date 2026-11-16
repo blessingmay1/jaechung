@@ -44,6 +44,14 @@
     margin: 0 auto;
     padding: 56px 40px 72px;
   }
+  .page-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+  .page-head .title-block { flex: 1; }
   h1 {
     font-size: 26px;
     font-weight: normal;
@@ -54,9 +62,31 @@
     font-family: Helvetica, Arial, sans-serif;
     font-size: 13px;
     color: #6a6a6a;
-    margin-bottom: 42px;
     letter-spacing: 0.03em;
   }
+  .cv-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #fdfdfb;
+    border: 1.5px solid #1a1a1a;
+    padding: 11px 18px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+  }
+  .cv-download:hover {
+    background: #1a1a1a;
+    color: #fdfdfb;
+    text-decoration: none;
+  }
+  .cv-download .arrow { font-size: 14px; }
   .intro {
     font-size: 16px;
     color: #2a2a2a;
@@ -145,6 +175,8 @@
     nav a { margin-right: 14px; font-size: 12px; }
     main { padding: 36px 20px 48px; }
     h1 { font-size: 23px; }
+    .page-head { flex-direction: column; align-items: stretch; gap: 16px; }
+    .cv-download { align-self: flex-start; }
   }
 </style>
 </head>
@@ -156,7 +188,7 @@
     <div>
       <a href="https://jaechung.org/">Home</a>
       <a href="https://jaechung.org/research">Research</a>
-      <a href="https://jaechung.org/publications" class="here">Publications</a>
+      <a href="https://jaechung.org/publications" class="here">CV</a>
       <a href="https://jaechung.org/teaching">Teaching</a>
       <a href="https://jaechung.org/highlights">Talks &amp; Media</a>
       <a href="https://jaechung.org/about">About</a>
@@ -167,8 +199,15 @@
 
 <main>
 
-<h1>Publications</h1>
-<div class="sub">Jaeyeon (Jae) Chung &middot; Rice University &middot; Last updated September 2026</div>
+<div class="page-head">
+  <div class="title-block">
+    <h1>Publications &amp; CV</h1>
+    <div class="sub">Jaeyeon (Jae) Chung &middot; Rice University &middot; Last updated September 2026</div>
+  </div>
+  <a class="cv-download" href="https://jaechung.org/assets/Jaeyeon_Chung_CV.pdf" target="_blank" rel="noopener">
+    Download Full CV <span class="arrow">↓</span>
+  </a>
+</div>
 
 <p class="intro">
   My work examines how consumers form judgments, trust, and preferences in technology-mediated marketplaces. Recent papers address generative AI and creativity, misinformation and personalized recommendation systems, social media influence, NFT valuation, virtual reality, and prediction markets. Articles appear in the <em>Journal of Marketing</em>, <em>Journal of Consumer Research</em>, <em>Journal of Marketing Research</em>, <em>Nature Human Behaviour</em>, and the <em>Harvard Business Review</em>.
@@ -203,6 +242,9 @@
       Lee, B.*, &amp; Chung, J.* (2025). <span class="title">Reply to: ChatGPT decreases idea diversity in brainstorming.</span> <span class="venue">Nature Human Behaviour</span>. (*equal contribution)
     </div>
     <div class="note"><a href="https://doi.org/10.1038/s41562-025-02195-5">doi.org/10.1038/s41562-025-02195-5</a></div>
+    <div class="summary">
+      An engaged scholarly exchange on what creativity actually means. We argue that idea diversity and creative-thinking output are two distinct constructs: ChatGPT may reduce the raw count of unique ideas in brainstorming, but it can simultaneously enhance the coherence and usability of the ideas that remain—which is a different, and arguably more important, measure of creative capacity.
+    </div>
   </li>
 
   <li>
@@ -354,7 +396,7 @@
 </p>
 
 <p class="cvlink">
-  A complete record of conference presentations, invited talks, teaching, and service is available in the <a href="https://jaechung.org/assets/Jaeyeon_Chung_CV.pdf">full CV (PDF)</a>.
+  Prefer the traditional format? <a href="https://jaechung.org/assets/Jaeyeon_Chung_CV.pdf">Download the full CV (PDF)</a> for a complete record including every conference presentation, invited talk, teaching, and service.
 </p>
 
 </main>
