@@ -1,82 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- INSERT GOOGLE SEARCH CONSOLE VERIFICATION META TAG HERE -->
-  <title>CV | Jaeyeon Chung | Rice University</title><link rel="canonical" href="https://jaechung.org/publications.html"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="manifest" href="site.webmanifest"><link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV | Jaeyeon Chung | Rice University</title>
+<meta name="description" content="CV and publications of Jaeyeon (Jae) Chung, William S. Mackey Jr. Distinguished Assistant Professor of Marketing at Rice University. Research on consumer behavior, digital marketing, generative AI, social media influence, NFT markets, virtual reality, and prediction markets.">
+<link rel="canonical" href="https://jaechung.org/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CV | Jaeyeon Chung | Rice University">
+<meta property="og:description" content="CV and publications of Jaeyeon (Jae) Chung, marketing professor at Rice University.">
+<meta property="og:url" content="https://jaechung.org/publications.html">
+<meta property="og:image" content="https://jaechung.org/assets/jaeyeon_chung_headshot.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CV | Jaeyeon Chung | Rice University">
+<meta name="twitter:description" content="CV and publications of Jaeyeon (Jae) Chung, marketing professor at Rice University.">
+<meta name="twitter:image" content="https://jaechung.org/assets/jaeyeon_chung_headshot.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Jaeyeon (Jae) Chung","jobTitle":"William S. Mackey Jr. Distinguished Assistant Professor of Marketing","affiliation":{"@type":"CollegeOrUniversity","name":"Rice University"},"url":"https://jaechung.org/","sameAs":["https://business.rice.edu/person/jaeyeon-jae-chung","https://www.linkedin.com/in/jaeyeon-jae-chung-0b37a83a","https://www.researchgate.net/profile/Jaeyeon-Chung-3"]}
+</script>
+<style>
+  /* Publications-specific styling, using site tokens */
+  .page-hero .container.pubhead { display:flex; justify-content:space-between; align-items:flex-start; gap:36px; flex-wrap:wrap; }
+  .page-hero .pubhead .title-block { flex:1; min-width:300px; }
+  .page-hero .pubhead .cv-btn-wrap { flex-shrink:0; margin-top:24px; }
+  .page-hero p.pub-sub { color:var(--muted); font-size:15px; margin-top:16px; max-width:760px; }
 
-  <meta name="description" content="Curriculum vitae for Jaeyeon (Jae) Chung, marketing professor at Rice University.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="CV | Jaeyeon Chung | Rice University">
-  <meta property="og:description" content="Curriculum vitae for Jaeyeon (Jae) Chung, marketing professor at Rice University.">
-  <meta property="og:image" content="https://jaechung.org/assets/jaeyeon_chung_headshot.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CV | Jaeyeon Chung | Rice University">
-  <meta name="twitter:description" content="Curriculum vitae for Jaeyeon (Jae) Chung, marketing professor at Rice University.">
-  <meta name="twitter:image" content="https://jaechung.org/assets/jaeyeon_chung_headshot.jpg">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Jaeyeon (Jae) Chung",
-  "alternateName": [
-    "Jaeyeon Chung",
-    "Jae Chung"
-  ],
-  "jobTitle": "William S. Mackey Jr. Distinguished Assistant Professor",
-  "worksFor": {
-    "@type": "CollegeOrUniversity",
-    "name": "Rice University",
-    "url": "https://www.rice.edu/"
-  },
-  "affiliation": {
-    "@type": "Organization",
-    "name": "Rice Business",
-    "url": "https://business.rice.edu/person/jaeyeon-jae-chung"
-  },
-  "url": "https://jaechung.org",
-  "image": "https://jaechung.org/assets/jaeyeon_chung_headshot.jpg",
-  "sameAs": [
-    "https://business.rice.edu/person/jaeyeon-jae-chung",
-    "https://profiles.rice.edu/faculty/jaeyeon-jae-chung",
-    "https://scholar.google.com/citations?hl=en&user=r5wBbHMAAAAJ",
-    "https://www.linkedin.com/in/jaeyeon-jae-chung-0b37a83a",
-    "https://www.researchgate.net/profile/Jaeyeon-Chung-3"
-  ],
-  "knowsAbout": [
-    "Marketing",
-    "Digital Marketing",
-    "Consumer Behavior",
-    "Recommendation Algorithms",
-    "Social Media",
-    "Prediction Markets",
-    "Virtual Reality",
-    "Artificial Intelligence",
-    "Digital Ownership",
-    "Online Platforms"
-  ],
-  "award": "MSI Young Scholar 2025"
-}
-  </script>
+  .lead { font-size:18px; line-height:1.75; color:#2a3542; max-width:860px; margin:0 0 56px; }
+  .lead em { font-style:italic; color:var(--ink); }
 
-  <script src="analytics.js"></script>
+  .pub-h { font-family:var(--serif); font-size:32px; font-weight:700; color:var(--navy); margin:56px 0 24px; padding-bottom:14px; border-bottom:2px solid var(--line); line-height:1.2; }
+  .pub-h:first-of-type { margin-top:0; }
+
+  .pub-list { list-style:none; padding:0; margin:0; counter-reset:pub; }
+  .pub-list > li { counter-increment:pub; padding:26px 0 26px 60px; border-bottom:1px solid var(--line); position:relative; }
+  .pub-list > li:last-child { border-bottom:none; }
+  .pub-list > li::before { content:counter(pub); position:absolute; left:0; top:30px; width:38px; height:38px; border-radius:50%; background:var(--accent-soft); color:var(--navy); font-weight:800; font-size:14px; display:inline-flex; align-items:center; justify-content:center; }
+
+  .status { font-size:11px; font-weight:800; color:var(--accent); letter-spacing:.14em; text-transform:uppercase; margin-bottom:10px; }
+  .cite { font-size:16.5px; line-height:1.6; color:var(--ink); margin-bottom:6px; }
+  .cite .title { font-weight:700; color:var(--navy); }
+  .cite .venue { font-style:italic; color:#46505b; }
+  .note { font-size:13px; color:var(--muted); margin-bottom:10px; }
+  .note a { color:var(--accent); text-decoration:none; border-bottom:1px solid #cbd5e0; }
+  .note a:hover { border-bottom-color:var(--accent); }
+  .summary { font-size:15.5px; line-height:1.7; color:#46505b; margin-top:10px; max-width:860px; }
+
+  .honors p { font-size:16px; line-height:1.75; color:#46505b; margin:0 0 14px; max-width:860px; }
+
+  .cv-callout { margin-top:72px; padding:28px 32px; background:var(--accent-soft); border-radius:var(--radius); font-size:15px; color:var(--ink); max-width:860px; }
+  .cv-callout a { color:var(--navy); font-weight:700; text-decoration:underline; text-decoration-color:rgba(18,52,90,.35); }
+  .cv-callout a:hover { text-decoration-color:var(--navy); }
+
+  @media (max-width: 720px) {
+    .pub-h { font-size:26px; }
+    .pub-list > li { padding-left:52px; }
+    .page-hero .pubhead .cv-btn-wrap { margin-top:8px; }
+  }
+</style>
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap">
-<a class="brand-mark" href="/">JC</a>
-<nav class="nav"><a href="/" class="">Home</a><a href="research.html" class="">Research</a><a href="publications.html" class="active">CV</a><a href="teaching.html" class="">Teaching</a><a href="highlights.html" class="">Talks &amp; Media</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a></nav>
-</div></header>
-<main>
-<section class="page-hero"><div class="container">
-<h1>CV</h1>
-</div></section>
 
-<section class="section"><div class="container">
-<div class="project-card"><h3>CV</h3><p>Complete publication history, working papers, invited talks, awards, teaching, and professional service.</p><a class="btn secondary" href="assets/Jaeyeon_Chung_CV.pdf" target="_blank" rel="noopener">Open CV ↗</a></div>
-</div></section>
+<div class="container nav-wrap">
+  <a class="brand-mark" href="/">JC</a>
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/research">Research</a>
+    <a href="/publications" class="active">CV</a>
+    <a href="/teaching">Teaching</a>
+    <a href="/highlights">Talks &amp; Media</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container pubhead">
+      <div class="title-block">
+        <p class="eyebrow">CV</p>
+        <h1>Publications &amp; research record.</h1>
+        <p class="pub-sub">Jaeyeon (Jae) Chung &middot; Rice University &middot; Last updated September 2026</p>
+      </div>
+      <div class="cv-btn-wrap">
+        <a class="btn primary" href="/assets/Jaeyeon_Chung_CV.pdf" target="_blank" rel="noopener">Download Full CV&nbsp; ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="lead">
+        My work examines how consumers form judgments, trust, and preferences in technology-mediated marketplaces. Recent papers address generative AI and creativity, misinformation and personalized recommendation systems, social media influence, NFT valuation, virtual reality, and prediction markets. Articles appear in the <em>Journal of Marketing</em>, <em>Journal of Consumer Research</em>, <em>Journal of Marketing Research</em>, <em>Nature Human Behaviour</em>, and the <em>Harvard Business Review</em>.
+      </p>
+
+      <h2 class="pub-h">Peer-reviewed journal articles</h2>
+
+      <ol class="pub-list">
+
+        <li>
+          <div class="status">Conditionally accepted, Journal of Marketing</div>
+          <div class="cite">Chung, J.*, Kim, S.*, &amp; Johar, G. (forthcoming). <span class="title">How personalized video recommendation algorithms induce consumers to believe any misguided information on the platform.</span> <span class="venue">Journal of Marketing</span>. (*equal contribution)</div>
+          <div class="summary">Reliance on personalized recommendation systems on video-sharing platforms raises trust in the platform itself, which in turn increases belief in information encountered through it—including misguided claims. The paper identifies a mechanism by which recommendation algorithms can inadvertently amplify misinformation.</div>
+        </li>
+
+        <li>
+          <div class="cite">Chung, J., &amp; Park, E. (2026). <span class="title">How social cues drive popularity in NFT art markets.</span> <span class="venue">Journal of Marketing</span>.</div>
+          <div class="note"><a href="https://doi.org/10.1177/00222429261460019">doi.org/10.1177/00222429261460019</a></div>
+          <div class="summary">In NFT markets where aesthetic quality is difficult to evaluate, visible social cues—prior attention, engagement, and ownership signals—displace aesthetic judgment as the dominant driver of popularity and price. The paper combines OpenSea marketplace data with controlled experiments to document the displacement.</div>
+        </li>
+
+        <li>
+          <div class="cite">Lee, B.*, &amp; Chung, J.* (2025). <span class="title">Reply to: ChatGPT decreases idea diversity in brainstorming.</span> <span class="venue">Nature Human Behaviour</span>. (*equal contribution)</div>
+          <div class="note"><a href="https://doi.org/10.1038/s41562-025-02195-5">doi.org/10.1038/s41562-025-02195-5</a></div>
+          <div class="summary">An engaged scholarly exchange on what creativity actually means. We argue that idea diversity and creative-thinking output are two distinct constructs: ChatGPT may reduce the raw count of unique ideas in brainstorming, but it can simultaneously enhance the coherence and usability of the ideas that remain—which is a different, and arguably more important, measure of creative capacity.</div>
+        </li>
+
+        <li>
+          <div class="cite">Lee, B.*, &amp; Chung, J.* (2024). <span class="title">An empirical investigation of the impact of ChatGPT on creativity.</span> <span class="venue">Nature Human Behaviour</span>. (*equal contribution)</div>
+          <div class="note"><a href="https://doi.org/10.1038/s41562-024-01953-1">doi.org/10.1038/s41562-024-01953-1</a> &middot; Covered by Harvard Business Review, Fast Company, The Conversation (lead article), and 55+ outlets</div>
+          <div class="summary">A large-scale empirical study showing that ChatGPT improves creative output on everyday tasks not by generating more ideas, but by helping people develop ideas with greater coherence and articulation. The paper distinguishes between ideation and refinement in human–AI collaboration.</div>
+        </li>
+
+        <li>
+          <div class="cite">Chung, J., Ding, Y., &amp; Kalra, A. (2023). <span class="title">I really know you: How influencers can increase audience engagement by referencing their close social ties.</span> <span class="venue">Journal of Consumer Research</span>, 50(4), 683–703.</div>
+          <div class="note">Editor's Choice &middot; <a href="https://doi.org/10.1093/jcr/ucad019">doi.org/10.1093/jcr/ucad019</a> &middot; <a href="https://hbr.org/2024/09/research-for-influencers-showing-your-inner-circle-can-boost-engagement">Harvard Business Review</a></div>
+          <div class="summary">When Instagram influencers reference their close personal relationships rather than remain purely professional, audience engagement rises substantially. Field and experimental studies trace the effect to perceived authenticity through self-disclosure and identify boundary conditions relevant to brand collaborations.</div>
+        </li>
+
+        <li>
+          <div class="cite">Chung, J., Lee, L., Lehmann, D. R., &amp; Tsai, C. I. (2023). <span class="title">Spending windfall ("found") time on hedonic versus utilitarian activities.</span> <span class="venue">Journal of Consumer Research</span>, 49(6), 1118–1139.</div>
+          <div class="note"><a href="https://doi.org/10.1093/jcr/ucac032">doi.org/10.1093/jcr/ucac032</a></div>
+          <div class="summary">When consumers unexpectedly gain free time—a canceled meeting, an early-ending flight, a snow day—they systematically allocate it toward hedonic rather than utilitarian activities. The paper introduces the concept of "found time" and shows the hedonic shift across field and laboratory studies.</div>
+        </li>
+
+        <li>
+          <div class="cite">Chung, J., Johar, G. V., Li, Y., Netzer, O., &amp; Pearson, M. (2022). <span class="title">Mining consumer minds: Downstream consequences of host motivations for home-sharing platforms.</span> <span class="venue">Journal of Consumer Research</span>, 48(5), 817–838.</div>
+          <div class="note"><a href="https://doi.org/10.1093/jcr/ucab034">doi.org/10.1093/jcr/ucab034</a></div>
+          <div class="summary">Text mining of Airbnb host descriptions, combined with longitudinal performance data, shows that intrinsic versus monetary motivations predict a cascade of downstream outcomes—guest ratings, retention, pricing behavior, and customer lifetime value—with implications for incentive design on sharing-economy platforms.</div>
+        </li>
+
+        <li>
+          <div class="cite">Chung, J., &amp; Lee, L. (2019). <span class="title">To buy or to resist: When upward social comparison discourages new product adoption.</span> <span class="venue">Journal of the Association for Consumer Research</span>.</div>
+          <div class="note"><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/703697">journals.uchicago.edu</a></div>
+          <div class="summary">Contrary to the dominant view that envy triggers imitative adoption, upward social comparison can suppress adoption of new products when comparison targets feel too distant or the product threatens the consumer's self-concept.</div>
+        </li>
+
+        <li>
+          <div class="cite">Chung, J., &amp; Johar, G. V. (2018). <span class="title">The seesaw self: Possessions, identity (de)activation, and task performance.</span> <span class="venue">Journal of Marketing Research</span>, 55(5), 752–765.</div>
+          <div class="note"><a href="https://journals.sagepub.com/doi/10.1177/0022243718793885">journals.sagepub.com</a></div>
+          <div class="summary">Possessions activate the identity they represent while suppressing competing aspects of the self. The resulting "seesaw" effect enhances performance on identity-congruent tasks and impairs performance on unrelated ones, with implications for product design and brand positioning.</div>
+        </li>
+
+      </ol>
+
+      <h2 class="pub-h">Working papers &amp; submissions</h2>
+
+      <ol class="pub-list">
+        <li>
+          <div class="status">Submitted after minor revision, Journal of Consumer Psychology</div>
+          <div class="cite">Jun, Y., Chung, J., &amp; Johar, G. <span class="title">The backfiring effect of virtual reality for high sensation seeking consumers.</span></div>
+          <div class="summary">Across six studies—including two field studies (a VR theme park and the National Museum of Korea) and a skin-conductance-response laboratory study—immersive VR substitutes for physical consumption primarily through need fulfillment rather than sensory habituation. The substitution effect is strongest among high-need consumers and is eliminated when VR is framed as a teaser for a subsequent real-world experience.</div>
+        </li>
+      </ol>
+
+      <h2 class="pub-h">Work in progress</h2>
+
+      <ol class="pub-list">
+        <li>
+          <div class="status">Under review, Journal of Marketing Research</div>
+          <div class="cite">Chung, J., &amp; Lee, B. <span class="title">Upward vs. downward trends: Asymmetry in cascade following behavior at Polymarket.</span></div>
+          <div class="summary">Using 3,564 Polymarket prediction contracts and controlled experiments, this paper documents a directional asymmetry in herding: consumers overwhelmingly follow upward momentum—even on weak signals—producing significant monetary losses, while downward momentum is largely ignored. The asymmetry is traced to ease of mental simulation, ruling out FOMO, positivity bias, and in-group conformity.</div>
+        </li>
+
+        <li>
+          <div class="status">Data analysis in progress</div>
+          <div class="cite">Chung, J., &amp; Jun, Y. <span class="title">Deception without deceivers.</span></div>
+          <div class="summary">Why does misleading content thrive online when much of it originates from creators who never set out to deceive? Under algorithmic pressure to maximize fluency and engagement, well-intentioned creators strip nuance and produce visually decontextualized content that lowers viewers' epistemic vigilance. The design pairs multimodal analysis of YouTube health and finance videos—quantifying visual variance, audio–visual sentiment dissonance, and context loss—with a controlled experiment isolating the role of the visual layer.</div>
+        </li>
+
+        <li>
+          <div class="status">Three studies completed</div>
+          <div class="cite">Schakols, F., Chung, J., &amp; Hofstetter, R. <span class="title">Fostering identity expansion: How AI-collaborative thinking styles drive adoption among managers.</span></div>
+          <div class="summary">An identity-based framework for managerial resistance to AI in creative work. Using AI for broad, exploratory thinking—rather than narrow, in-depth analysis—triggers a positive identity transformation, enhancing managers' self-perceptions as creative professionals and significantly increasing adoption intentions across three studies with working managers.</div>
+        </li>
+      </ol>
+
+      <h2 class="pub-h">Non-refereed publications &amp; book chapter</h2>
+
+      <ol class="pub-list">
+        <li>
+          <div class="cite">Chung, J., Ding, Y., &amp; Kalra, A. (2025). <span class="title">Cutting through the noise: Why talking about your friends matters more than you think in influencer engagement.</span> <span class="venue">Management and Business Review</span>.</div>
+        </li>
+        <li>
+          <div class="cite">Chung, J., &amp; Kalra, A. (2024, September 12). <span class="title">Research: For influencers, showing your inner circle can boost engagement.</span> <span class="venue">Harvard Business Review</span>.</div>
+          <div class="note"><a href="https://hbr.org/2024/09/research-for-influencers-showing-your-inner-circle-can-boost-engagement">hbr.org</a></div>
+        </li>
+        <li>
+          <div class="cite">Johar, G. V., Chung, J., &amp; Weiss, L. (2019). <span class="title">Our identities, our selves.</span> In M. Forehand &amp; A. Reed (Eds.), <span class="venue">Handbook for Research on Identity Theory in Marketing</span>. (Invited chapter.)</div>
+        </li>
+      </ol>
+
+      <h2 class="pub-h">Editorial service &amp; selected honors</h2>
+
+      <div class="honors">
+        <p>Editorial Review Board member, <em>Journal of Consumer Research</em>. Ad hoc reviewer for the <em>Journal of Marketing</em>, <em>Journal of Marketing Research</em>, <em>PNAS</em>, the <em>Journal of Experimental Social Psychology</em>, <em>Cognition &amp; Memory</em>, and <em>Production and Operations Management</em>.</p>
+        <p>Recent honors include the 2025 MSI Young Scholar designation, Awards for Excellent Research at Rice Business (2024 and 2025), and research grants from the Chazen Institute of International Business (2017, 2019).</p>
+      </div>
+
+      <div class="cv-callout">
+        Prefer the traditional format? <a href="/assets/Jaeyeon_Chung_CV.pdf">Download the full CV (PDF)</a> for a complete record including every conference presentation, invited talk, teaching position, and service role.
+      </div>
+
+    </div>
+  </section>
 
 </main>
-<footer class="footer"><div class="container footer-inner"><span>© 2026 Jaeyeon Chung</span><span>Marketing · Rice University</span></div></footer>
-<script src="site-data.js"></script>
-<script src="site.js"></script>
-</body></html>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2026 Jaeyeon Chung</span>
+    <span>Marketing · Rice University</span>
+    <span class="professional-links">
+      <a href="/expertise">Expertise</a> <span>·</span>
+      <a href="https://business.rice.edu/person/jaeyeon-jae-chung">Rice Business</a> <span>·</span>
+      <a href="https://www.linkedin.com/in/jaeyeon-jae-chung-0b37a83a">LinkedIn</a> <span>·</span>
+      <a href="https://www.researchgate.net/profile/Jaeyeon-Chung-3">ResearchGate</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
